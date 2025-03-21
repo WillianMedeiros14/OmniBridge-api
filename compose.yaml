@@ -33,7 +33,6 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
 
-
   omnibridge-microservices-register:
     build:
       context: ./omnibridge-microservices-register
@@ -52,6 +51,29 @@ services:
       - omnibridge-service-bridge
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8081 || exit 1"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+
+  omnibridge-service:
+    build:
+      context: ./omnibridge-service
+      dockerfile: Dockerfile
+    container_name: omnibridge-service
+    ports:
+      - "8082:8080"
+    depends_on:
+      rabbitmq-service:
+        condition: service_healthy
+        restart: true
+      postgres:
+        condition: service_healthy
+        restart: true
+    networks:
+      - omnibridge-service-bridge
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8082 || exit 1"]
       interval: 10s
       retries: 5
       start_period: 30s
