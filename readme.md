@@ -67,3 +67,5 @@ Depois de rodar as aplicações, elas estarão disponíveis em:
 ```bash
  https://github.com/WillianMedeiros14/omnibridgea_app
 ```
+
+- Você pode assistir ao vídeo do resultado do projeto [aqui](https://drive.google.com/file/d/11ScBXUUZGwf9e2w90bidQDYE5fLujmqo/view?usp=sharing).
