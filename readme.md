@@ -61,3 +61,9 @@ Depois de rodar as aplicações, elas estarão disponíveis em:
 
 - Microsserviço de criação de conta (omniBridge-microservices-register): http://localhost:8081/swagger/index.html
 - Microsserviço principal (omniBridge-service): http://localhost:8082/swagger/index.html
+
+🚀 Caso queira uma experiencia melhor, foi construída um aplicação em flutter para usar esta api, ela pode ser encontrada no link abaixo:
+
+```bash
+ https://github.com/WillianMedeiros14/omnibridgea_app
+```
