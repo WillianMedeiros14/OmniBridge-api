@@ -1,0 +1,6 @@
+@omniBridge_microservices_register_HostAddress = http://localhost:5276
+
+GET {{omniBridge_microservices_register_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
