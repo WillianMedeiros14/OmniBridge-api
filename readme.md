@@ -11,6 +11,12 @@ Esta solução consiste em dois microsserviços:
 - Microsserviço principal (omniBridge-service)
 - Microsserviço de criação de conta (omniBridge-microservices-register)
 
+### Diagrama de Arquitetura de Autenticação e Cadastro
+
+<h1 align="center"> 
+  <img alt="Diagrama" title="Diagrama" src="assets/diagrama.png"/>
+</h1>
+
 ### Funcionalidades
 
 Microsserviço principal:
